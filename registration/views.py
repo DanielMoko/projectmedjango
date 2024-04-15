@@ -26,3 +26,4 @@ def home(request):
 def FAQs(request):
     template = loader.get_template("FAQs.html")
     return HttpResponse(template.render())
+
