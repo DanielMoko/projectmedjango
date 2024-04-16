@@ -11,5 +11,5 @@ class Student(models.Model):
 
 class Data(models.Model):
     name = models.CharField(max_length=100)
-    date_of_birth = models.DateField()
-    phone_number = models.CharField(max_length=15, blank=True, null=True)
+    email = models.EmailField(unique=True)
+    age = models.CharField(max_length=15,blank=True, null=True)
