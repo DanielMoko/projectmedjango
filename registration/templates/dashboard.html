@@ -5,31 +5,23 @@
     <title>dashboard</title>
 </head>
 <body>
-<!--
-<div class="col-md-5" style="...">
-    <u><h3 class="bg-dark text-white p-1 text-center">Student Registration</h3></u>
-
-    <form method="POST" action="/addstudent" style="width:100%;">
-        {% csrf_token %}
-
-        <div class="mb-3">
-            <label for="name" class="form-label">Name</label>
-            <input type="text" class="form-control" name="studname" id="name" placeholder="Enter your name">
-        </div>
-
-        <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" name="studmail" id="email" placeholder="Enter your email">
-        </div>
-
-        <div class="mb-3">
-            <label for="age" class="form-label">Age</label>
-            <input type="number" class="form-control" name="studage" id="age" placeholder="Enter your age">
-        </div>
-
-        <button type="submit" class="btn btn-primary">Register</button>
-    </form>
-</div>
--->
+{% block test %}
+     <form
 </body>
 </html>
+<label style="margin-top: 10px;"><b style="margin-right: 190px">First name:</b></label><br><input type="text" name="urname"placeholder="Enter 1st name"><br>
+                    <label style="margin-top: 10px;"><b style="margin-right: 150px">phone number:</b></label><br><input type="text" name="number" placeholder="Enter phone number"><br>
+                    <label style="margin-top: 10px;"><b style="margin-right: 190px">location:</b></label><br><input type="text" name="name" placeholder="Enter your location"><br>
+                    <label style="margin-top: 10px;"><b style="margin-right: 190px">Email:</b></label><br><input type="email" name="email" placeholder="Enter your email address"><br>
+                    <label style="margin-top: 10px;"><b style="margin-right: 190px">Age:</b></label><br><input type="number" name="age" placeholder="Enter your age"><br>
+                    <label style="margin-top: 10px;"><b>Mode of payment:</b></label>
+                <select name="name" style="margin-top: 10px;">
+                    <option>Mpesa</option>
+                    <option>Debit card</option>
+                    <option>Cash</option>
+                    <option>Paypal</option>
+
+                </select><br>
+                    <label><b>answered all above queries:</b></label>
+                    <input type="checkbox" name="name" placeholder="what"><br>
+                    <input type="submit" name="savedata">

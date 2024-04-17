@@ -26,5 +26,6 @@ urlpatterns = [
     path('contact us/', include("registration.urls")),
     path('', include("registration.urls")),
     path('student/', include('registration.urls')),
+    path("dashboard/", include('registration.urls')),
     path('admin/', admin.site.urls),
     ]

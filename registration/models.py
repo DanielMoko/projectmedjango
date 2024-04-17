@@ -10,6 +10,6 @@ class Student(models.Model):
     address = models.CharField(max_length=100, blank=True, null=True )
 
 class Data(models.Model):
-    name = models.CharField(max_length=100)
-    email = models.EmailField(unique=True)
-    age = models.CharField(max_length=15,blank=True, null=True)
+    studentname = models.CharField(max_length=100)
+    emailaddress = models.EmailField(unique=True)
+    studentage = models.CharField(max_length=15, blank=True, null=True)
