@@ -27,10 +27,11 @@
   </div>
 -->
 {% block form %}
-<form >
+<form method="POST" action="/addstudent" style="width:100%;">
+ {% csrf_token %}
     <div style="float: right;border-bottom: 2px solid black;width: 50%">
-                   <div method="POST" action="/addstudent" style="width:100%;">
-        {% csrf_token %}
+
+
   <div>
     <label for="name">Name:</label><br>
     <input type="text" id="name" name="name" required><br>
@@ -45,10 +46,10 @@
   </div>
   <br>
   <input type="submit" value="Submit">
-                   </div>
-
-
     </div>
+
+
+
 
         </form>
 
